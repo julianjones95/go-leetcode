@@ -4,31 +4,45 @@ This repository contains solutions to common leetcode problems. This also
 contains test cases in case the reader wants to pull the repository and run
 their code locally.
 
-## Directory
+## Structure
+
+Below is the learning structure I followed when making this repository. It is
+important to note some weeks only contain 1 topic. This is because I found
+that understanding of said topic was strategically important for comprehension
+of future topics.
 
 ```
-├── week1
-│   ├── Arrays-Hashing
-│   ├── Stacks
-│   └── Two-Pointers
-├── week2
-│   ├── BinarySearch
-│   ├── LinkedList
-│   └── SlidingWindow
-├── week3
-│   ├── Backtracking
-│   ├── Trees
-│   └── Tries
-├── week4
-│   ├── 1D-DP
-│   ├── Graphs
-│   └── Heap-PQ
-├── week5
-│   ├── Adv-Graphs
-│   ├── Greedy
-│   └── Intervals
-└── week6
-    ├── 2D-DP
-    ├── Bit-Manip
-    └── Math-Geo
+├── month1
+│   ├── week01
+│   │   └── Arrays-Hashing
+│   ├── week02
+│   │   ├── Stacks
+│   │   └── TwoPointers
+│   ├── week03
+│   │   ├── BinarySearch
+│   │   └── SlidingWindow
+│   └── week04
+│       └── LinkedList
+├── month2
+│   ├── week05
+│   │   ├── Trees
+│   │   └── Tries
+│   ├── week06
+│   │   └── Backtracking
+│   ├── week07
+│   │   └── Heap-PQ
+│   └── week08
+│       └── Graphs
+└── month3
+    ├── week09
+    │   └── 1D-DP
+    ├── week10
+    │   ├── Greedy
+    │   └── Intervals
+    ├── week11
+    │   ├── 2D-DP
+    │   └── Adv-Graphs
+    └── week12
+        ├── Bit-Manip
+        └── Math-Geo
 ```
