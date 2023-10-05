@@ -1,5 +1,6 @@
 package main
 
+import "sort"
 
 func main(){
 	print(checkValidAnagram("tan","nat"))
@@ -27,7 +28,29 @@ func GroupAnagrams(strs []string) [][]string {
 		}
 	}
 
+	sortSliceByNumElements(groupedAnagrams)
+
+	sortSliceAlphabeticallyByFirstLetter(groupedAnagrams)
+
 	return groupedAnagrams;
+}
+
+func sortSliceByNumElements(nums [][]string) [][]string{
+	sort.SliceStable(nums, func(i, j int) bool {
+		return len(nums[i]) < len(nums[j]) 	
+	})
+
+	return nums
+}
+
+func sortSliceByFirstLetter(nums [][]string) [][]string {
+	for i:=0; i<len(nums); i++ {
+		sort.Slice(nums[i], func(k, l int) bool { 
+			return nums[i][k] < nums[i][l]
+		})
+	}
+
+	return nums
 }
 
 func checkValidAnagram (str1 string, str2 string) bool {
