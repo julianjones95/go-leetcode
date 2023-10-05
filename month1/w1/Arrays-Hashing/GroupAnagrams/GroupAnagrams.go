@@ -43,7 +43,7 @@ func sortSliceByNumElements(nums [][]string) [][]string{
 	return nums
 }
 
-func sortSliceByFirstLetter(nums [][]string) [][]string {
+func sortSliceAlphabeticallyByFirstLetter(nums [][]string) [][]string {
 	for i:=0; i<len(nums); i++ {
 		sort.Slice(nums[i], func(k, l int) bool { 
 			return nums[i][k] < nums[i][l]
