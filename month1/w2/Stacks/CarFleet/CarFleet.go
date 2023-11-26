@@ -39,15 +39,15 @@ func CarFleet (target int, position []int, speed []int) int {
 
 	keys := make([]int, 0, len(carMap))
 
-
 	for i := range position {
 		keys = append(keys,i)
 	}
-
 	
 	sort.Ints(keys)
 
-	fmt.Println(keys)
+	for _, k := range keys {
+		fmt.Println(k, carMap)
+	}
 
 
 	return 0;
